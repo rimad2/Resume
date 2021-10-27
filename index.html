@@ -3,33 +3,48 @@
     <head>
         <meta charset="UTF-8">
         <title>Resume Nurgaliev D.R.</title>
+        <link href="styles.css" rel="stylesheet"/>
     </head>
     <body>
-        <table cellspacing="15">
-            <td>
-                <img src="Avatar.jpg" width="200" 
-                alt="Здесь мое фото">
-            </td>
-            <td>
-                <p><strong>Дамир Радикович Нургалиев</strong></p>
-                <p><em>город Тихвин</em></p>
-                <p><em>Россия</em></p>
-            </td>
-        </table>  
+    <div class="container">
+        <div class="info">
+            <img src="Avatar.jpg"
+            alt="Здесь мое фото"
+            class="avatar">
+            
+            <div class="info-text">
+                <h1><strong>Дамир Радикович Нургалиев</strong></h1>
+                <p>город Тихвин</p>
+                <p>Россия</p>  
+            
+
+                <h3>Социальные сети</h3>
+            
+                <a href="https://vk.com/rimad2" 
+                target="_blank"> 
+                    Вконтакте</a>
+                |
+                <a href="https://web.telegram.org/z/" 
+                target="_blank"> 
+                    Telegramm</a>
+            </div>
+        </div>
     
-    <hr>
-        <h2>Образование</h2>
-        <p>Высшее</p>
-        <p>Санкт-Петербургский государственный политехнический университет</p>
-        <p>Направление - Инноватика</p>
-    <hr>
+        <div class="card bg-yellow">
+            <h2>Образование</h2>
+            <p>Высшее</p>
+            <p>Санкт-Петербургский государственный политехнический университет</p>
+            <p>Направление - Инноватика</p>
+        </div>
+    
+        <div class="card bg-green">
         <h2>Опыт работы</h2>
-        <table border="1">
+        <table border="1" class="table">
             <tr>
                 <th>Название компании</th>
                 <th>Должность</th>
                 <th>Год</th>
-            </tr>
+           
             <tr>
                 <td>ООО "Титран-Экспресс"</td>
                 <td>Мастер</td>
@@ -46,11 +61,9 @@
                 <td>01.2021- по н.в.</td>
             </tr>
         </table>
-    <hr>
-        <h2>Социальные сети</h2>
-        <a href="social.html" target="_blank"> 
-                Список социальных сетей</a>
-    <hr>
+        </div>
+      
+        <div class="card bg-red">
         <h2>Хобби</h2>
         <ul>
             <li>Рыбалка</li>
@@ -58,39 +71,63 @@
             <li>Спортивные передачи</li>
             <Li>Ютуб-контент</Li>
             <li>Самообучение по профессии тестировщик</li>     
-    <hr>
-        <h2>Ключевые навыки в тестировании</h2>
-        <ol>
-            <li>Тестирование</li>
-            <Li>Postman</Li>
-            <li>SQL</li>
-            <li>Jira</li>
-            <li>Confluence</li>
-            <li>TestRail</li>
-            <li>Git</li>
-            <li>Python</li>
-        </ol>
-    <hr>
-        <h2>Дополнительно</h2>
-            <p>Полная занятость</p>
-            <p>Удаленная работа</p>
-    <hr>
-        <h2>Связаться со мной</h2>
-        <form action="/">
-            <label for="name">Ваше имя</label>
-            <input type="text" id="name"
-            placeholder="Введите ваше имя">
-            <br>
-            <label for="email">Ваш email</label>
-            <input type="email" id="email"
-            placeholder="Введите вашу эл. почту">
-            <br>
-            <label for="text">Ваше сообщение </label>
-            <br>
-            <textarea name="" id="text" cols="30" rows="10"></textarea>   
-            <br>
-            <input type="submit" value="Связяться!">
-        </form>
-    <hr>
+        </div>
+      
+        <div class="card bg-blue">
+            <h2>Ключевые навыки в тестировании</h2>
+            <ol class="list">
+                <li>Тестирование</li>
+                <Li>Postman</Li>
+                <li>SQL</li>
+                <li>Jira</li>
+                <li>Confluence</li>
+                <li>TestRail</li>
+                <li>Git</li>
+                <li>Python</li>
+            </ol>
+        </div>
+        
+        <div class="card bg-yellow">
+            <h2>Дополнительно</h2>
+                <p>Полная занятость</p>
+                <p>Удаленная работа</p>
+        </div>
+
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name"
+                        placeholder="Введите ваше имя">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="email">Ваш email</label>
+                        <input type="email" id="email"
+                        placeholder="Введите вашу эл. почту">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="text">Ваше сообщение </label>
+                </div>
+
+                <div class="form-group">
+                    <textarea name="" id="text" cols="30" rows="10"></textarea>   
+                </div>
+                
+                <input class="btn" type="submit" value="Связaться!">  
+            </form>
+            <div class="position">
+                <div class="box"></div>
+            </div>
+        </div>
+        
+        
+
+    </div>
     </body>
 </html>
